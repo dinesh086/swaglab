@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+<listeners>
+<listener class-name = "com.qa.listeners.TestListener"/>
+</listeners>
+  <test name="Xiaomi11i">
+  
+  <parameter name ="deviceName" value="Xiaomi11i"/>
+  <parameter name ="udid" value="gmaybemv9xaaeqpz"/>
+  <parameter name ="platformName" value="Android"/>
+  <parameter name ="platformVersion" value="11.0"/>
+  <parameter name ="systemPort" value="10000"/>
+  <parameter name ="chromeDriverPort" value="11000"/>
+    <classes>
+     <class name="com.qa.tests.LoginTests">
+      <!--<methods>
+      <include name = "invalidUserName"/>
+      </methods> -->
+      </class>
+       <class name="com.qa.tests.ProductTests">
+    <!-- <methods>
+      <include name = "validateProductOnProductDetailsPage"/>
+      </methods> -->
+      </class>
+    </classes>
+  </test> 
+  <!--<test name="Redmi 5A">
+  
+  <parameter name ="deviceName" value="Redmi 5A"/>
+  <parameter name ="udid" value="199088987d05"/>
+  <parameter name ="platformName" value="Android"/>
+  <parameter name ="platformVersion" value="8.1.0"/>
+   <parameter name ="systemPort" value="10001"/>
+    <parameter name ="chromeDriverPort" value="11001"/>
+    <classes>
+     <class name="com.qa.tests.LoginTests">
+      <methods>
+      <include name = "invalidUserName"/>
+      </methods> 
+      </class>
+        <class name="com.qa.tests.ProductTests">
+    <methods>
+      <include name = "validateProductOnProductDetailsPage"/>
+      </methods> 
+      </class>
+    </classes>
+  </test>-->
+  
+ 
+</suite> <!-- Suite -->
